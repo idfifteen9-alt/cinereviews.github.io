@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YBY CineReviews - Movies, Series & Anime Reviews</title>
+    <meta name="description" content="Discover the latest movie, series, and anime reviews. Expert ratings and detailed analysis of your favorite entertainment content.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header"></header>
+      <main>
+        <section id="hero"></section>
+        <div id="top-ad"></div>
+        <section id="reviews-section">
+          <div class="container">
+            <div class="section-header">
+              <h2>Latest Reviews</h2>
+              <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="movie">Movies</button>
+                <button class="filter-btn" data-filter="series">Series</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+              </div>
+            </div>
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Search reviews..." />
+            </div>
+            <div id="review-grid"></div>
+            <div id="middle-ad"></div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
